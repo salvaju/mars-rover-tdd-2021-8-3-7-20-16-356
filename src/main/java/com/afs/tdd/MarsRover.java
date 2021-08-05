@@ -16,7 +16,7 @@ public class MarsRover {
     }
 
     public void executeCommand(String command) {
-        
+
         if (MOVE.equals(command)) {
             move();
         } else if (LEFT.equals(command)) {
