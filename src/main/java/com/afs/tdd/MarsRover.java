@@ -7,6 +7,7 @@ public class MarsRover {
     public static final String NORTH = "N";
     public static final String WEST = "W";
     public static final String EAST = "E";
+    public static final String SOUTH = "S";
 
     private RoverStatus roverStatus;
 
@@ -27,7 +28,7 @@ public class MarsRover {
     }
 
     private void move() {
-        if ("S".equals(roverStatus.getDirection())) {
+        if (SOUTH.equals(roverStatus.getDirection())) {
             roverStatus.decrementLocationY();
         } else if (NORTH.equals(roverStatus.getDirection())) {
             roverStatus.increaseLocationY();
