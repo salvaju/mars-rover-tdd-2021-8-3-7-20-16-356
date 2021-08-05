@@ -2,6 +2,7 @@ package com.afs.tdd;
 
 public class MarsRover {
 
+    public static final String MOVE = "M";
     private RoverStatus roverStatus;
 
     public MarsRover(RoverStatus roverStatus) {
@@ -10,7 +11,7 @@ public class MarsRover {
 
     public void executeCommand(String command) {
         
-        if ("M".equals(command)) {
+        if (MOVE.equals(command)) {
             move();
         }
 
