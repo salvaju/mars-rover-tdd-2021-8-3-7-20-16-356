@@ -19,6 +19,8 @@ public class MarsRover {
             move();
         } else if (LEFT.equals(command)) {
             turnLeft();
+        } else {
+            turnRight();
         }
 
     }
@@ -30,6 +32,12 @@ public class MarsRover {
     private void turnLeft() {
         if (NORTH.equals(roverStatus.getDirection())) {
             roverStatus.setDirection(WEST);
+        }
+    }
+
+    private void turnRight() {
+        if (NORTH.equals(roverStatus.getDirection())) {
+            roverStatus.setDirection("E");
         }
     }
 
