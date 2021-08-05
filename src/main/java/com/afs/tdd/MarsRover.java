@@ -58,6 +58,8 @@ public class MarsRover {
             roverStatus.setDirection(WEST);
         } else if (EAST.equals(roverStatus.getDirection())) {
             roverStatus.setDirection(SOUTH);
+        } else {
+            roverStatus.setDirection(NORTH);
         }
     }
 
