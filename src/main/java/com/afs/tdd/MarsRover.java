@@ -34,6 +34,8 @@ public class MarsRover {
             roverStatus.increaseLocationY();
         } else if (EAST.equals(roverStatus.getDirection())) {
             roverStatus.incrementLocationX();
+        } else {
+            roverStatus.decrementLocationX();
         }
     }
 
