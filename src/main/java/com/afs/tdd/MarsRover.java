@@ -9,7 +9,7 @@ public class MarsRover {
     public static final String EAST = "E";
     public static final String SOUTH = "S";
 
-    private RoverStatus roverStatus;
+    private final RoverStatus roverStatus;
 
     public MarsRover(RoverStatus roverStatus) {
         this.roverStatus = roverStatus;
