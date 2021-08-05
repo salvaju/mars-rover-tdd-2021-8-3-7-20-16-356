@@ -27,7 +27,11 @@ public class MarsRover {
     }
 
     private void move() {
-        roverStatus.increaseLocationY();
+        if ("S".equals(roverStatus.getDirection())) {
+            roverStatus.decrementLocationY();
+        } else if (NORTH.equals(roverStatus.getDirection())) {
+            roverStatus.increaseLocationY();
+        }
     }
 
     private void turnLeft() {

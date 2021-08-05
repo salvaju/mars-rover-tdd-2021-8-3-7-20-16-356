@@ -27,6 +27,10 @@ public class RoverStatus {
         this.locationY ++;
     }
 
+    public void decrementLocationY(){
+        this.locationY --;
+    }
+
     public void setDirection(String direction) {
         this.direction = direction;
     }
