@@ -9,7 +9,15 @@ public class MarsRover {
     }
 
     public void executeCommand(String command) {
+        
+        if ("M".equals(command)) {
+            move();
+        }
 
+    }
+
+    private void move() {
+        roverStatus.increaseLocationY();
     }
 
     public RoverStatus getRoverStatus() {
