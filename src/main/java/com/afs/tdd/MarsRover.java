@@ -66,4 +66,7 @@ public class MarsRover {
     public RoverStatus getRoverStatus() {
         return this.roverStatus;
     }
+
+    public void executeCommands(String commands) {
+    }
 }
