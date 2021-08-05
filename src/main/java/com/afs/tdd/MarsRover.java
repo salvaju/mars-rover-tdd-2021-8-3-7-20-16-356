@@ -6,6 +6,7 @@ public class MarsRover {
     public static final String LEFT = "L";
     public static final String NORTH = "N";
     public static final String WEST = "W";
+    public static final String EAST = "E";
 
     private RoverStatus roverStatus;
 
@@ -37,7 +38,7 @@ public class MarsRover {
 
     private void turnRight() {
         if (NORTH.equals(roverStatus.getDirection())) {
-            roverStatus.setDirection("E");
+            roverStatus.setDirection(EAST);
         }
     }
 
